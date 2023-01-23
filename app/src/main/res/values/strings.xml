@@ -37,4 +37,16 @@
     <string name="login_don_t_have_an_account">Login don t have an account</string>
 
 
+    <dimen name="_8sdp" />
+    <dimen name="_16sdp" />
+    <dimen name="_130sdp" />
+    <dimen name="_40sdp" />
+    <dimen name="_16ssp" />
+    <dimen name="_44ssp" />
+    <dimen name="_4sdp" />
+    <dimen name="_14ssp" />
+    <dimen name="_20ssp" />
+    <dimen name="_18ssp" />
+    <dimen name="_110sdp" />
+    <dimen name="_6sdp" />
 </resources>
