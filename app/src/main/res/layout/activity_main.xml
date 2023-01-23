@@ -125,4 +125,17 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <Button
+        android:id="@+id/btn_start_learning"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_primary"
+        android:text="@string/Panduan_Game"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="549dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

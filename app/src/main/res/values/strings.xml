@@ -35,6 +35,7 @@
     <string name="user_name">"User name</string>
     <string name="phone_number">Phone number</string>
     <string name="login_don_t_have_an_account">Login don t have an account</string>
+    <string name="Panduan_Game">Panduan Game</string>
 
 
     <dimen name="_8sdp" />
