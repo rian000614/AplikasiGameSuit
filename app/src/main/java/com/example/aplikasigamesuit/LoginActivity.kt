@@ -55,7 +55,7 @@ class LoginActivity : AppCompatActivity(), MainView {
                             //intent.putExtra(MainActivity.KEY_NAME, inputName)
                             Log.i(TAG, "Kirim Nama $inputName")
                             startActivity(intent)
-                            //startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                         } else {
                             Toast.makeText(
                                 this@LoginActivity,
