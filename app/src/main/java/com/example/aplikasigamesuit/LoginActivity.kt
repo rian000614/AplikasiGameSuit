@@ -55,7 +55,7 @@ class LoginActivity : AppCompatActivity(), MainView {
                         if (nameInDb != null && numberInDb != null) {
                             loginPref.setLoginPref()
                             val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                            intent.putExtra(MainActivity.KEY_NAME, inputName)
+                            intent.putExtra(MainActivity.KEY_NAM, inputName)
                             Log.i(TAG, "Kirim Nama $inputName")
                             startActivity(intent)
                             //startActivity(Intent(this@LoginActivity, MainActivity::class.java))
