@@ -7,7 +7,7 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.Gravity
 import android.view.WindowManager
-import com.example.androidchallenge5.R
+import com.example.aplikasigamesuit.R
 
 object Constants {
     const val SPLASH_TIME_LONG: Long = 1500
