@@ -7,6 +7,14 @@
     android:padding="@dimen/_16sdp"
     tools:context=".GameActivity">
 
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="start"
+        android:src="@drawable/back"
+        tools:ignore="MissingConstraints" />
+
 
     <ImageView
         android:id="@+id/imageView"

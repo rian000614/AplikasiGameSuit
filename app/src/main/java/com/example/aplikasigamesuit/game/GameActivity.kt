@@ -1,4 +1,4 @@
-package com.example.aplikasigamesuit.game
+package com.example.aplikasigamesuit
 
 import android.content.Context
 import android.os.Bundle
