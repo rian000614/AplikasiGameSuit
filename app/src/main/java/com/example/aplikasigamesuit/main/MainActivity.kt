@@ -9,7 +9,7 @@ import com.example.aplikasigamesuit.utils.Constants.KEY_PLAYER_TWO
 import com.example.aplikasigamesuit.utils.Constants.PLAYER_CPU
 import com.example.aplikasigamesuit.utils.Constants.PLAYER_TWO
 import com.example.aplikasigamesuit.databinding.ActivityMainBinding
-import com.google.androidgamesdk.GameActivity
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

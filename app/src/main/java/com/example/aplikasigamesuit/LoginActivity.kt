@@ -11,6 +11,7 @@ import com.binar.gamedesignbinarcp6.database.UsersRoomDatabase
 import com.binar.gamedesignbinarcp6.mvp.MainPresenterImpl
 import com.binar.gamedesignbinarcp6.mvp.MainView
 import com.example.aplikasigamesuit.databinding.ActivityLoginBinding
+import com.example.aplikasigamesuit.utils.Constants.KEY_NAME
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 

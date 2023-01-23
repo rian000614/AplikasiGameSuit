@@ -17,7 +17,7 @@ class GamesGuideActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.ivBack.setOnClickListener {
-            startActivity(Intent(this, ))
+          //  startActivity(Intent(this, ))
         }
     }
 }
