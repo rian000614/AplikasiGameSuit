@@ -1,11 +1,40 @@
 <resources>
-    <string name="app_name">Aplikasi Game Suit</string>
-    <string name="hint_user_name">User Name</string>
-    <string name="hint_phone_number">Password</string>
-    <string name="login_don_t_have_an_account">Dont Have An Account</string>
-    <string name="login">Login</string>
+    <string name="app_name">Android Challenge 5</string>
+    <string name="app_logo">App Logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bermain_suit_melawan_sesama_pemain">Bermain suit melawan sesama pemain.</string>
+    <string name="bermain_suit_melawan_komputer">Bermain suit melawan komputer.</string>
+
+    <string name="landing_page_image">Landing Page Image</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="kertas">Kertas</string>
+    <string name="gunting">Gunting</string>
+    <string name="batu">Batu</string>
+    <string name="pemain_1">Pemain 1</string>
+    <string name="vs">VS</string>
+    <string name="pemain_1_menang">Pemain 1 Menang!</string>
+    <string name="pemain_2_menang">Pemain 2 Menang!</string>
+    <string name="draw">DRAW</string>
+    <string name="com">COM</string>
+    <string name="button_refresh">Button Refresh</string>
+    <string name="pilih_lawanmu">PILIH LAWANMU</string>
+    <string name="tutup">Tutup</string>
+    <string name="hasil_permainan">Hasil Permainan</string>
+    <string name="main_lagi">Main Lagi</string>
+    <string name="kembali_ke_menu">Kembali Ke Menu</string>
+    <string name="tuliskan_namamu_di_bawah">Tuliskan namamu di bawah</string>
     <string name="register">Register</string>
-    <string name="hint_name">Full Name</string>
-    <string name="btn_text_sign_up">SIGN UP</string>
-    <string name="already_have_an_account">Already Have An Account</string>
+    <string name="User_name">"User name</string>
+    <string name="full_name">Full name</string>
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_have_an_account">"Already have an account"</string>
+    <string name="login">LOGIN</string>
+    <string name="user_name">"User name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="login_don_t_have_an_account">Login don t have an account</string>
+
+
 </resources>

@@ -1,26 +1,63 @@
-package com.example.aplikasigamesuit
+package com.example.androidchallenge5.ui.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import com.example.androidchallenge5.ui.game.GameActivity
+import com.example.androidchallenge5.utils.Constants.KEY_NAME
+import com.example.androidchallenge5.utils.Constants.KEY_PLAYER_TWO
+import com.example.androidchallenge5.utils.Constants.PLAYER_CPU
+import com.example.androidchallenge5.utils.Constants.PLAYER_TWO
 import com.example.aplikasigamesuit.databinding.ActivityMainBinding
+
+
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var loginPref: LoginPref
 
-    companion object {
-        const val KEY_NAME = "key_name"
-        const val KEY_NAME_FROM_DIALOG = "key_name_from_dialog"
-        const val KEY_NAME_FROM_MAIN = "key_name_from_main"
-        const val TAG = "MenuActivity"
-    }
+    private lateinit var username: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        loginPref = LoginPref(this)
 
+        username = intent.getStringExtra(KEY_NAME).toString()
+
+        setResources()
+        setListeners()
+
+        setContentView(binding.root)
+    }
+
+    private fun setResources() {
+        binding.apply {
+            tvPlayerVsPlayer.text = StringBuilder("$username vs Pemain")
+            tvPlayerVsCom.text = StringBuilder("$username vs CPU")
+            tvWelcomePlayer.text = StringBuilder("Selamat Datang $username")
         }
     }
+
+    private fun setListeners() {
+        binding.apply {
+            layoutPlayerVsPlayer.setOnClickListener {
+                val iGame = Intent(this@MainActivity, GameActivity::class.java)
+                iGame.putExtra(KEY_NAME, username)
+                iGame.putExtra(KEY_PLAYER_TWO, PLAYER_TWO)
+                startActivity(iGame)
+            }
+
+            layoutPlayerVsCom.setOnClickListener {
+                val iGame = Intent(this@MainActivity, GameActivity::class.java)
+                iGame.putExtra(KEY_NAME, username)
+                iGame.putExtra(KEY_PLAYER_TWO, PLAYER_CPU)
+                startActivity(iGame)
+            }
+
+            btnCloseLayout.setOnClickListener {
+                layoutWelcome.visibility = View.GONE
+            }
+        }
+    }
+}
