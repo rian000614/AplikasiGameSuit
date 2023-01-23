@@ -29,18 +29,18 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        var btn : Button = findViewById(R.id.btn)
+        var btn: Button = findViewById(R.id.btn)
         btn.setOnClickListener {
-            val alertDialog : AlertDialog = AlertDialog.Builder(this).create()
+            val alertDialog: AlertDialog = AlertDialog.Builder(this).create()
             alertDialog.setTitle("Exit")
             alertDialog.setMessage("Do you want Exit ?")
 
-            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes") {
-                    dialog, which -> finish()
-                dialog.dismiss()}
+            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes") { dialog, which ->
+                finish()
+                dialog.dismiss()
+            }
 
-            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No") {
-                    dialog, which ->
+            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No") { dialog, which ->
                 dialog.dismiss()
 
             }
@@ -51,44 +51,36 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-
-
-
-
-
-
-
-    }
     }
 
-    private fun setResources() {
-        binding.apply {
-            tvPlayerVsPlayer.text = StringBuilder("$username vs Pemain")
-            tvPlayerVsCom.text = StringBuilder("$username vs CPU")
-            tvWelcomePlayer.text = StringBuilder("Selamat Datang $username")
+
+private fun setResources() {
+    binding.apply {
+        tvPlayerVsPlayer.text = StringBuilder("$username vs Pemain")
+        tvPlayerVsCom.text = StringBuilder("$username vs CPU")
+        tvWelcomePlayer.text = StringBuilder("Selamat Datang $username")
+    }
+}
+
+private fun setListeners() {
+    binding.apply {
+        layoutPlayerVsPlayer.setOnClickListener {
+            val iGame = Intent(this@MainActivity, GameActivity::class.java)
+            iGame.putExtra(KEY_NAME, username)
+            iGame.putExtra(KEY_PLAYER_TWO, PLAYER_TWO)
+            startActivity(iGame)
+        }
+
+        layoutPlayerVsCom.setOnClickListener {
+            val iGame = Intent(this@MainActivity, GameActivity::class.java)
+            iGame.putExtra(KEY_NAME, username)
+            iGame.putExtra(KEY_PLAYER_TWO, PLAYER_CPU)
+            startActivity(iGame)
+        }
+
+        btnCloseLayout.setOnClickListener {
+            layoutWelcome.visibility = View.GONE
         }
     }
-
-    private fun setListeners() {
-        binding.apply {
-            layoutPlayerVsPlayer.setOnClickListener {
-                val iGame = Intent(this@MainActivity, GameActivity::class.java)
-                iGame.putExtra(KEY_NAME, username)
-                iGame.putExtra(KEY_PLAYER_TWO, PLAYER_TWO)
-                startActivity(iGame)
-            }
-
-            layoutPlayerVsCom.setOnClickListener {
-                val iGame = Intent(this@MainActivity, GameActivity::class.java)
-                iGame.putExtra(KEY_NAME, username)
-                iGame.putExtra(KEY_PLAYER_TWO, PLAYER_CPU)
-                startActivity(iGame)
-            }
-
-            btnCloseLayout.setOnClickListener {
-                layoutWelcome.visibility = View.GONE
-            }
-        }
-    }
+}
 }
