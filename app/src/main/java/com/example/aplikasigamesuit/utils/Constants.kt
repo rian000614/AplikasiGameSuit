@@ -1,4 +1,4 @@
-package com.example.androidchallenge5.utils
+package com.example.aplikasigamesuit.utils
 
 import android.app.Dialog
 import android.content.Context

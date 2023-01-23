@@ -4,10 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidchallenge5.utils.Constants.KEY_NAME
-import com.example.androidchallenge5.utils.Constants.KEY_PLAYER_TWO
-import com.example.androidchallenge5.utils.Constants.PLAYER_CPU
-import com.example.androidchallenge5.utils.Constants.PLAYER_TWO
+import com.example.aplikasigamesuit.utils.Constants.KEY_NAME
+import com.example.aplikasigamesuit.utils.Constants.KEY_PLAYER_TWO
+import com.example.aplikasigamesuit.utils.Constants.PLAYER_CPU
+import com.example.aplikasigamesuit.utils.Constants.PLAYER_TWO
 import com.example.aplikasigamesuit.databinding.ActivityMainBinding
 import com.google.androidgamesdk.GameActivity
 
