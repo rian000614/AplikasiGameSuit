@@ -127,7 +127,7 @@
 
     <Button
         android:id="@+id/btn_start_learning"
-        android:layout_width="194dp"
+        android:layout_width="195dp"
         android:layout_height="55dp"
         android:background="@drawable/button_primary"
         android:text="@string/Panduan_Game"
