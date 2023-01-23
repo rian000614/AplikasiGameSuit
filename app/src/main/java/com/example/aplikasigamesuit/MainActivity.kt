@@ -3,6 +3,8 @@ package com.example.aplikasigamesuit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import androidx.appcompat.app.AlertDialog
 import com.example.aplikasigamesuit.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +23,38 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         loginPref = LoginPref(this)
+
+        var btn : Button = findViewById(R.id.btn)
+        btn.setOnClickListener {
+            val alertDialog : AlertDialog = AlertDialog.Builder(this).create()
+            alertDialog.setTitle("Exit")
+            alertDialog.setMessage("Do you want Exit ?")
+
+            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes") {
+                    dialog, which -> finish()
+                dialog.dismiss()}
+
+            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No") {
+                    dialog, which ->
+                dialog.dismiss()
+
+            }
+
+            alertDialog.show()
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+    }
 
         }
     }
