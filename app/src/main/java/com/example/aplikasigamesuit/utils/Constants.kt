@@ -1,6 +1,5 @@
 package com.example.androidchallenge5.utils
 
-
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
@@ -26,7 +25,7 @@ object Constants {
             val params: WindowManager.LayoutParams = this.attributes
             params.width = WindowManager.LayoutParams.MATCH_PARENT
             params.height = WindowManager.LayoutParams.WRAP_CONTENT
-            attributes.windowAnimations = R.transition.fade
+            attributes.windowAnimations = android.R.transition.fade
             setGravity(Gravity.CENTER)
             setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         }

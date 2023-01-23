@@ -1,4 +1,4 @@
-package com.example.androidchallenge5.ui.game
+package com.example.aplikasigamesuit
 
 import android.content.Context
 import android.os.Bundle
@@ -11,8 +11,8 @@ import com.example.androidchallenge5.utils.Constants
 import com.example.androidchallenge5.utils.Constants.KEY_NAME
 import com.example.androidchallenge5.utils.Constants.KEY_PLAYER_TWO
 import com.example.androidchallenge5.utils.Constants.PLAYER_CPU
-import com.example.aplikasigamesuit.R
 import com.example.aplikasigamesuit.databinding.ActivityGameBinding
+
 
 class GameActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGameBinding

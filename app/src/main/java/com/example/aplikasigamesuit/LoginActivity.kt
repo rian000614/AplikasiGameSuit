@@ -3,7 +3,6 @@ package com.example.aplikasigamesuit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Contacts.SettingsColumns.KEY
 import android.util.Log
 import android.view.KeyEvent
 import android.widget.Toast
@@ -11,8 +10,6 @@ import com.binar.gamedesignbinarcp6.database.Users
 import com.binar.gamedesignbinarcp6.database.UsersRoomDatabase
 import com.binar.gamedesignbinarcp6.mvp.MainPresenterImpl
 import com.binar.gamedesignbinarcp6.mvp.MainView
-import com.example.androidchallenge5.ui.main.MainActivity
-import com.example.androidchallenge5.utils.Constants.KEY_NAME
 import com.example.aplikasigamesuit.databinding.ActivityLoginBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
@@ -55,7 +52,7 @@ class LoginActivity : AppCompatActivity(), MainView {
                         if (nameInDb != null && numberInDb != null) {
                             loginPref.setLoginPref()
                             val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                            intent.putExtra(MainActivity.KEY_NAME, inputName)
+                            //intent.putExtra(MainActivity.KEY_NAME, inputName)
                             Log.i(TAG, "Kirim Nama $inputName")
                             startActivity(intent)
                             //startActivity(Intent(this@LoginActivity, MainActivity::class.java))
