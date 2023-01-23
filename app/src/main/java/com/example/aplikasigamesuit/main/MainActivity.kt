@@ -1,4 +1,4 @@
-package com.example.aplikasigamesuit
+package com.example.aplikasigamesuit.main
 
 import android.content.Intent
 import android.os.Bundle
