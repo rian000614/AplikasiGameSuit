@@ -8,4 +8,7 @@
     <string name="hint_name">Full Name</string>
     <string name="btn_text_sign_up">SIGN UP</string>
     <string name="already_have_an_account">Already Have An Account</string>
+    <string name="hasil_permainan" />
+    <string name="main_lagi" />
+    <string name="kembali_ke_menu" />
 </resources>
