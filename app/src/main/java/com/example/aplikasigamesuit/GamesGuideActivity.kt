@@ -18,6 +18,6 @@ class GamesGuideActivity : AppCompatActivity() {
 
         binding.ivBack.setOnClickListener {
             startActivity(Intent(this, ))
-        }
+        }**
     }
 }
