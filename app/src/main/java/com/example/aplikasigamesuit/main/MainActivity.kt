@@ -3,6 +3,8 @@ package com.example.aplikasigamesuit
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aplikasigamesuit.utils.Constants.KEY_NAME
 import com.example.aplikasigamesuit.utils.Constants.KEY_PLAYER_TWO
@@ -26,6 +28,38 @@ class MainActivity : AppCompatActivity() {
         setListeners()
 
         setContentView(binding.root)
+
+        var btn : Button = findViewById(R.id.btn)
+        btn.setOnClickListener {
+            val alertDialog : AlertDialog = AlertDialog.Builder(this).create()
+            alertDialog.setTitle("Exit")
+            alertDialog.setMessage("Do you want Exit ?")
+
+            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes") {
+                    dialog, which -> finish()
+                dialog.dismiss()}
+
+            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No") {
+                    dialog, which ->
+                dialog.dismiss()
+
+            }
+
+            alertDialog.show()
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+    }
     }
 
     private fun setResources() {
