@@ -18,8 +18,6 @@
         <activity
             android:name=".GamesGuideActivity"
             android:exported="false" />
-
-
         <activity
             android:name=".MainActivity"
             android:exported="false" />
