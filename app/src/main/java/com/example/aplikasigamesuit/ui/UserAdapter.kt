@@ -34,7 +34,7 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHoler>() {
         private val binding = UserItemBinding.bind(itemView)
         fun bind(users: Users) {
             binding.tvName.text = users.name
-            binding.tvFlName.text = users.fullname
+            binding.tvEmail.text = users.email
             binding.tvNumber.text = users.number
         }
     }
