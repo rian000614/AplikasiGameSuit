@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.Guideline
 import com.example.aplikasigamesuit.utils.Constants.KEY_NAME
 import com.example.aplikasigamesuit.utils.Constants.KEY_PLAYER_TWO
 import com.example.aplikasigamesuit.utils.Constants.PLAYER_CPU
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        var btn: Button = findViewById(R.id.btn)
+        val btn: Button = findViewById(R.id.btn)
         btn.setOnClickListener {
             val alertDialog: AlertDialog = AlertDialog.Builder(this).create()
             alertDialog.setTitle("Exit")
