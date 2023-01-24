@@ -20,5 +20,13 @@
             <solid android:color="@color/blue" />
         </shape>
     </item>
-</selector>
 
+    <item>
+        <shape>
+            <corners android:radius="100dp"/>
+            <solid android:color="@color/white"/>
+            <stroke android:color="@color/black"/>
+            <stroke android:width="5dp"/>
+        </shape>
+    </item>
+</selector>
