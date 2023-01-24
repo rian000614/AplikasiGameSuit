@@ -27,11 +27,15 @@ class MainActivity : AppCompatActivity() {
 
         setResources()
         setListeners()
+        exit()
+        setPanduan()
 
         setContentView(binding.root)
 
-        val btn: Button = findViewById(R.id.btn)
-        btn.setOnClickListener {
+    }
+
+   private fun exit() {
+        binding.btn.setOnClickListener {
             val alertDialog: AlertDialog = AlertDialog.Builder(this).create()
             alertDialog.setTitle("Exit")
             alertDialog.setMessage("Do you want Exit ?")
@@ -50,8 +54,6 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-
-
     }
 
 
@@ -79,9 +81,17 @@ private fun setListeners() {
             startActivity(iGame)
         }
 
+
         btnCloseLayout.setOnClickListener {
             layoutWelcome.visibility = View.GONE
         }
     }
+
 }
+    private fun setPanduan(){
+        binding.btnPanduan.setOnClickListener {
+            val intent= Intent(this@MainActivity, GamesGuideActivity::class.java)
+            startActivity(intent)
+        }
+    }
 }

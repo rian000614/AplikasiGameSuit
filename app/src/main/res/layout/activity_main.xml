@@ -142,7 +142,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/btn_start_learning"
+        android:id="@+id/btn_panduan"
         android:layout_width="196dp"
         android:layout_height="55dp"
         android:background="@drawable/button_primary"
@@ -150,8 +150,11 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="549dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_content"
+        app:layout_constraintVertical_bias="0.303"
+        tools:layout_editor_absoluteX="88dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
